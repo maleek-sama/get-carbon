@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  overflow-x: hidden;
+}
 /* navbar styling - start */
 header {
   background-color: #2c1762;
@@ -387,6 +391,10 @@ a {
   .features-box {
     gap: 0;
   }
+
+  .nav-links {
+    align-items: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -405,6 +413,20 @@ a {
 
   .fa-bars {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  nav {
+    width: 92%;
+  }
+
+  .nav-links {
+    padding: 10px 0;
+  }
+
+  .image-box img {
+    width: 112px;
   }
 }
 /* media query navbar styling - end */
@@ -474,6 +496,10 @@ a {
 
   .faq-question-container {
     width: 92%;
+  }
+
+  .faq-list {
+    grid-template-columns: 1fr;
   }
 
   .faq-item {
@@ -575,6 +601,32 @@ a {
     width: 100%;
     padding: 14px 18px;
     text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .faq-bg-image-wrapper {
+    height: 200px;
+  }
+
+  .faq-question-wrapper {
+    padding-top: 270px;
+  }
+
+  .faq-header {
+    font-size: 25px;
+  }
+
+  .faq-item {
+    padding: 0 14px;
+  }
+
+  .faq-question span {
+    font-size: 15px;
+  }
+
+  .faq-answer {
+    font-size: 13px;
   }
 }
 /* media query faq wrapper section styling - end */
@@ -741,6 +793,27 @@ a {
 
   .footer-address {
     padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  .getcarbon-index,
+  .socials-section,
+  .footer-container {
+    width: 92%;
+  }
+
+  .getcarbon-appDownload img {
+    max-width: 150px;
+  }
+
+  .socials {
+    gap: 14px;
+  }
+
+  .footer-paragraph,
+  .footer-address {
+    font-size: 13px;
   }
 }
 /* media query for footer section - end */

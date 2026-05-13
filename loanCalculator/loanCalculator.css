@@ -25,7 +25,7 @@ body {
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 /* styling header - start */
@@ -919,6 +919,46 @@ button {
     margin: 10px 0 8px;
   }
 }
+
+@media (max-width: 640px) {
+  .navbar {
+    width: min(92%, 430px);
+    min-height: 68px;
+  }
+
+  .brand img {
+    width: 126px;
+  }
+
+  .nav-menu {
+    top: 68px;
+    max-height: calc(100vh - 68px);
+    padding: 10px 5% 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-plan-links {
+    gap: 8px;
+  }
+
+  .mobile-plan-links a,
+  .nav-link,
+  .nav-trigger,
+  .signup-btn {
+    min-height: 48px;
+    font-size: 14px;
+  }
+
+  .dropdown-link {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .dropdown-link small {
+    font-size: 12px;
+  }
+}
 /* media query for header - end */
 
 /* media query for the carbon calc - start */
@@ -993,6 +1033,38 @@ button {
 
   .carbon-payment-card h2 {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .carbon-calc-section {
+    padding: 34px 0 48px;
+  }
+
+  .carbon-calc-container {
+    width: 92%;
+    gap: 30px;
+  }
+
+  .carbon-calc-copy h1 {
+    font-size: 26px;
+    line-height: 1.12;
+  }
+
+  .carbon-calc-card {
+    padding: 24px 16px 22px;
+  }
+
+  .carbon-field label,
+  .carbon-radio-group legend {
+    font-size: 14px;
+  }
+
+  .carbon-field input,
+  .carbon-field select {
+    min-height: 52px;
+    padding-inline: 14px;
+    font-size: 14px;
   }
 }
 /* media query for the carbon calc - end */
@@ -1076,6 +1148,20 @@ button {
     font-size: 20px;
   }
 }
+
+@media (max-width: 380px) {
+  .getting-started-header {
+    font-size: 27px;
+  }
+
+  .getting-card-top {
+    padding-inline: 18px;
+  }
+
+  .getting-card-bottom {
+    min-height: 220px;
+  }
+}
 /* media query for the getting started w the carbon section - end */
 
 /* media query for the footer - start */
@@ -1149,6 +1235,20 @@ button {
 
   .footer-socials {
     gap: 18px;
+  }
+}
+
+@media (max-width: 380px) {
+  .store-badges img {
+    max-width: 150px;
+  }
+
+  .footer-socials {
+    gap: 14px;
+  }
+
+  .footer-legal-text {
+    font-size: 12px;
   }
 }
 /* media query for the footer - end */

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* styling the header - start */
 .business-header {
   position: sticky;
@@ -1974,6 +1978,8 @@
     padding: 18px 6% 26px;
     background: #ffffff;
     border-bottom: 1px solid #e7e2ef;
+    max-height: calc(100vh - 88px);
+    overflow-y: auto;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-12px);
@@ -2057,6 +2063,7 @@
 @media (max-width: 640px) {
   .business-navbar {
     width: min(92%, 430px);
+    min-height: 72px;
   }
 
   .business-brand img {
@@ -2071,6 +2078,27 @@
   .business-login,
   .business-create {
     width: 100%;
+  }
+
+  .business-nav-menu {
+    top: 72px;
+    max-height: calc(100vh - 72px);
+    padding: 14px 5% 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  .business-brand img {
+    width: 132px;
+  }
+
+  .business-plan-links a,
+  .business-nav-links a,
+  .business-dropdown-trigger,
+  .business-login,
+  .business-create {
+    min-height: 46px;
+    font-size: 14px;
   }
 }
 /* media query for the header - end */
@@ -2208,6 +2236,29 @@
     height: 58px;
   }
 }
+
+@media (max-width: 380px) {
+  .business-hero-container {
+    width: 92%;
+    padding-top: 38px;
+  }
+
+  .business-hero-top h1 {
+    font-size: 32px;
+  }
+
+  .business-hero-top p {
+    font-size: 16px;
+  }
+
+  .business-feature-card {
+    padding: 20px 18px;
+  }
+
+  .business-feature-card h3 {
+    font-size: 19px;
+  }
+}
 /* media query for credit led business bank section - end */
 
 /* media query for the business os section - start */
@@ -2332,6 +2383,29 @@
     max-width: 78%;
   }
 }
+
+@media (max-width: 380px) {
+  .business-os-container {
+    width: 92%;
+  }
+
+  .business-os-heading h2,
+  .business-account-copy h3 {
+    font-size: 28px;
+  }
+
+  .business-account-media {
+    min-height: 300px;
+  }
+
+  .business-account-photo {
+    height: 230px;
+  }
+
+  .business-account-card {
+    width: 230px;
+  }
+}
 /* media query for the business os section - end */
 
 /* media query for business loan section - start */
@@ -2433,6 +2507,28 @@
     max-width: 80%;
   }
 }
+
+@media (max-width: 380px) {
+  .business-loan-container {
+    width: 92%;
+  }
+
+  .business-loan-copy h2 {
+    font-size: 28px;
+  }
+
+  .business-loan-media {
+    min-height: 300px;
+  }
+
+  .business-loan-photo {
+    height: 230px;
+  }
+
+  .business-loan-card {
+    width: 235px;
+  }
+}
 /* media query for business loan section - end */
 
 /* media query for the collections section - start */
@@ -2531,6 +2627,28 @@
     left: 18px;
     width: 270px;
     max-width: 80%;
+  }
+}
+
+@media (max-width: 380px) {
+  .business-collections-container {
+    width: 92%;
+  }
+
+  .business-collections-copy h2 {
+    font-size: 28px;
+  }
+
+  .business-collections-media {
+    min-height: 300px;
+  }
+
+  .business-collections-photo {
+    height: 230px;
+  }
+
+  .business-collections-card {
+    width: 235px;
   }
 }
 /* media query for the collections section - end */
@@ -2634,6 +2752,28 @@
     max-width: 80%;
   }
 }
+
+@media (max-width: 380px) {
+  .business-investment-container {
+    width: 92%;
+  }
+
+  .business-investment-copy h2 {
+    font-size: 28px;
+  }
+
+  .business-investment-media {
+    min-height: 300px;
+  }
+
+  .business-investment-photo {
+    height: 230px;
+  }
+
+  .business-investment-card {
+    width: 235px;
+  }
+}
 /* media query for the investment section - end */
 
 /* media query for the want to find out more section - start */
@@ -2695,6 +2835,21 @@
     gap: 16px;
     padding: 0 20px;
     font-size: 17px;
+  }
+}
+
+@media (max-width: 380px) {
+  .business-more-container {
+    width: 92%;
+    padding-inline: 18px;
+  }
+
+  .business-more-container h2 {
+    font-size: 25px;
+  }
+
+  .business-more-button {
+    font-size: 15px;
   }
 }
 /* media query for the want to find out more section - end  */
@@ -2813,6 +2968,24 @@
     height: 68px;
   }
 }
+
+@media (max-width: 380px) {
+  .business-ready-container {
+    width: 92%;
+  }
+
+  .business-ready-copy h2 {
+    font-size: 28px;
+  }
+
+  .business-ready-card-copy {
+    min-height: 200px;
+  }
+
+  .business-ready-visual {
+    min-height: 200px;
+  }
+}
 /* media query for ready for your carbon experience - end */
 
 /* media query for banking for everyone section - start */
@@ -2902,6 +3075,17 @@
     line-height: 1.2;
   }
 }
+
+@media (max-width: 380px) {
+  .business-everyone-container {
+    width: 92%;
+  }
+
+  .business-everyone-card img,
+  .business-everyone-card.incorporation img {
+    height: 205px;
+  }
+}
 /* media query for banking for everyone section - end */
 
 /* media query for the 5 mins section - start */
@@ -2979,6 +3163,21 @@
     margin-top: 30px;
     padding: 0 18px;
     font-size: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .business-five-minutes-card {
+    width: 92%;
+    padding-inline: 16px;
+  }
+
+  .business-five-minutes-card h2 {
+    font-size: 29px;
+  }
+
+  .business-five-minutes-card p {
+    font-size: 16px;
   }
 }
 /* media query for the 5 mins section - end */
@@ -3090,6 +3289,24 @@
 
   .business-footer-legal p + p {
     margin-top: 24px;
+  }
+}
+
+@media (max-width: 380px) {
+  .business-footer-panel {
+    width: 92%;
+  }
+
+  .business-footer-panel-inner {
+    width: 86%;
+  }
+
+  .business-footer-downloads img {
+    width: 108px;
+  }
+
+  .business-footer-socials {
+    gap: 18px;
   }
 }
 /* media query for the business footer - end */
