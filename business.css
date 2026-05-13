@@ -1,0 +1,3095 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* styling the header - start */
+.business-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #ffffff;
+  border-bottom: 1px solid #e7e2ef;
+}
+
+.business-navbar {
+  width: 82%;
+  min-height: 120px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.business-brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.business-brand img {
+  width: 188px;
+  height: auto;
+  display: block;
+}
+
+.business-nav-menu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+
+.business-plan-links,
+.business-nav-links,
+.business-actions {
+  display: flex;
+  align-items: center;
+}
+
+.business-plan-links {
+  gap: 34px;
+}
+
+.business-nav-links {
+  gap: 36px;
+  margin-left: auto;
+}
+
+.business-actions {
+  gap: 10px;
+}
+
+.business-plan-links a,
+.business-nav-links a,
+.business-dropdown-trigger {
+  color: #171422;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.business-plan-links .active {
+  color: #241052;
+}
+
+.business-dropdown {
+  position: relative;
+}
+
+.business-dropdown::after {
+  content: "";
+  position: absolute;
+  left: -14px;
+  right: -14px;
+  top: 100%;
+  height: 18px;
+}
+
+.business-dropdown-trigger {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+
+.business-chevron {
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+}
+
+.business-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  width: 220px;
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(30, 16, 70, 0.16);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 10px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.business-dropdown:hover .business-dropdown-menu,
+.business-dropdown:focus-within .business-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+.business-dropdown-menu a {
+  padding: 12px 14px;
+  border-radius: 8px;
+  color: #312255;
+  font-size: 15px;
+}
+
+.business-dropdown-menu a:hover {
+  background: #f5f1ff;
+  color: #5d2ece;
+}
+
+.business-login,
+.business-create {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.business-login {
+  padding: 0 22px;
+  border: 1px solid #d6d0e4;
+  color: #241052;
+  background: #ffffff;
+}
+
+.business-create {
+  padding: 0 28px;
+  color: #ffffff;
+  background: #5d2ece;
+}
+
+.business-create:hover {
+  background: #4f22bd;
+}
+
+.business-menu-toggle,
+.business-menu-button {
+  display: none;
+}
+/* styling the header - end */
+
+/* styling the credit led business bank section - start */
+.business-hero-section {
+  background: #ffffff;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #2f2d34;
+}
+
+.business-hero-container {
+  width: 82%;
+  max-width: 1320px;
+  margin: auto;
+  padding: 42px 0 80px;
+  text-align: center;
+}
+
+.business-hero-top h1 {
+  max-width: 1060px;
+  margin: auto;
+  color: #3b1184;
+  font-size: 70px;
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.business-hero-top h1::first-line {
+  color: #4d1ca1;
+}
+
+.business-hero-top p {
+  margin-top: 20px;
+  color: #2f2d34;
+  font-size: 26px;
+  line-height: 1.35;
+}
+
+.business-hero-cta {
+  min-height: 62px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 34px;
+  padding: 0 32px;
+  border-radius: 8px;
+  background: #e80068;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.business-hero-cta:hover {
+  background: #d60060;
+  transform: translateY(-2px);
+}
+
+.business-regulation-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  margin-top: 28px;
+}
+
+.business-regulation-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #2f2d34;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.business-regulation-item img {
+  width: 50px;
+  height: auto;
+  display: block;
+}
+
+.business-regulation-item.ndic img {
+  width: 116px;
+}
+
+.business-trusted-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 24px;
+  text-align: left;
+}
+
+.business-trusted-row img {
+  width: 182px;
+  height: auto;
+  display: block;
+}
+
+.business-trusted-row p {
+  color: #2f2d34;
+  font-size: 18px;
+  line-height: 1.12;
+}
+
+.business-trusted-row strong {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.business-app-links {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.business-app-links a {
+  display: inline-flex;
+}
+
+.business-app-links img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.business-feature-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 132px;
+}
+
+.business-feature-card {
+  min-height: 116px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 24px 36px;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.business-feature-card.loans {
+  background: #e4fcff;
+}
+
+.business-feature-card.deposits {
+  background: #ececff;
+}
+
+.business-feature-card.manager {
+  background: #ffebf8;
+}
+
+.business-feature-icon {
+  width: 74px;
+  height: 74px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.business-feature-icon img {
+  width: 54px;
+  height: 54px;
+  display: block;
+}
+
+.business-feature-card h3 {
+  color: #2f2d34;
+  font-size: 25px;
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.business-hero-bottom {
+  max-width: 1120px;
+  margin: 32px auto 0;
+}
+
+.business-hero-bottom h2 {
+  color: #2f2d34;
+  font-size: 30px;
+  line-height: 1.35;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.business-hero-bottom .business-hero-cta {
+  min-height: 62px;
+  margin-top: 32px;
+  padding-inline: 34px;
+}
+
+.business-chat-button {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 70;
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #5d2ece;
+  box-shadow: 0 18px 42px rgba(45, 23, 98, 0.22);
+}
+
+.business-chat-button span {
+  position: relative;
+  width: 26px;
+  height: 19px;
+  border-radius: 9px;
+  background: #ffffff;
+}
+
+.business-chat-button span::before,
+.business-chat-button span::after {
+  content: "";
+  position: absolute;
+  background: #5d2ece;
+}
+
+.business-chat-button span::before {
+  left: 7px;
+  right: 7px;
+  top: 6px;
+  height: 3px;
+  border-radius: 999px;
+  box-shadow: 0 6px 0 #5d2ece;
+}
+
+.business-chat-button span::after {
+  left: 5px;
+  bottom: -5px;
+  width: 9px;
+  height: 9px;
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+/* styling the credit led business bank section - end */
+
+/* styling the business os section - start */
+.business-os-section {
+  background: #ffffff;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #343238;
+}
+
+.business-os-container {
+  width: 82%;
+  max-width: 1320px;
+  margin: auto;
+  padding: 70px 0 110px;
+}
+
+.business-os-heading {
+  text-align: center;
+}
+
+.business-os-pill,
+.business-account-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 42px;
+  padding: 0 22px;
+  border: 2px solid #8a68ff;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #343238;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.business-os-pill img,
+.business-account-pill img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.business-os-heading h2 {
+  margin-top: 24px;
+  color: #343238;
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.business-os-heading p {
+  margin-top: 26px;
+  color: #5f5a64;
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+.business-account-row {
+  display: grid;
+  grid-template-columns: 0.86fr 1fr;
+  align-items: center;
+  gap: 90px;
+  margin-top: 88px;
+}
+
+.business-account-copy {
+  text-align: left;
+}
+
+.business-account-copy h3 {
+  max-width: 640px;
+  margin-top: 26px;
+  color: #343238;
+  font-size: 46px;
+  line-height: 1.14;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.business-account-copy > p {
+  max-width: 720px;
+  margin-top: 20px;
+  color: #454149;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.business-account-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+  list-style: none;
+}
+
+.business-account-list li {
+  position: relative;
+  padding-left: 34px;
+  color: #605b65;
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.business-account-list li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #7757f4;
+}
+
+.business-account-list li::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  width: 6px;
+  height: 10px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: rotate(45deg);
+}
+
+.business-account-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+  color: #241052;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.business-account-link span {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #c8b9ff;
+}
+
+.business-account-link span::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #6f4de7;
+  border-right: 2px solid #6f4de7;
+  transform: rotate(45deg);
+}
+
+.business-account-link span::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 11px;
+  width: 10px;
+  height: 2px;
+  border-radius: 999px;
+  background: #6f4de7;
+}
+
+.business-account-media {
+  position: relative;
+  min-height: 500px;
+}
+
+.business-account-photo {
+  width: 100%;
+  height: 430px;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.business-account-card {
+  position: absolute;
+  left: 52px;
+  bottom: 0;
+  width: 360px;
+  max-width: 58%;
+  display: block;
+  filter: drop-shadow(0 18px 32px rgba(36, 16, 82, 0.08));
+}
+/* styling the business os section - end */
+
+/* styling the business loan section - start */
+.business-loan-section {
+  background: #ffffff;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #343238;
+}
+
+.business-loan-container {
+  width: 82%;
+  max-width: 1320px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 84px;
+  padding: 120px 0 130px;
+}
+
+.business-loan-media {
+  position: relative;
+  min-height: 500px;
+}
+
+.business-loan-photo {
+  width: 100%;
+  height: 430px;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.business-loan-card {
+  position: absolute;
+  left: 42px;
+  bottom: 0;
+  width: 420px;
+  max-width: 66%;
+  display: block;
+  filter: drop-shadow(0 18px 32px rgba(36, 16, 82, 0.08));
+}
+
+.business-loan-copy {
+  text-align: left;
+}
+
+.business-loan-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 42px;
+  padding: 0 22px;
+  border: 2px solid #8a68ff;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #343238;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.business-loan-pill img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.business-loan-copy h2 {
+  max-width: 640px;
+  margin-top: 26px;
+  color: #343238;
+  font-size: 46px;
+  line-height: 1.14;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.business-loan-copy > p {
+  max-width: 680px;
+  margin-top: 20px;
+  color: #343238;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.business-loan-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+  list-style: none;
+}
+
+.business-loan-list li {
+  position: relative;
+  padding-left: 34px;
+  color: #605b65;
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.business-loan-list li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #7757f4;
+}
+
+.business-loan-list li::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  width: 6px;
+  height: 10px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: rotate(45deg);
+}
+
+.business-loan-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+  color: #241052;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.business-loan-link span {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #c8b9ff;
+}
+
+.business-loan-link span::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #6f4de7;
+  border-right: 2px solid #6f4de7;
+  transform: rotate(45deg);
+}
+
+.business-loan-link span::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 11px;
+  width: 10px;
+  height: 2px;
+  border-radius: 999px;
+  background: #6f4de7;
+}
+/* styling the business loan section - end */
+
+/* styling the collections section - start */
+.business-collections-section {
+  background: #ffffff;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #343238;
+}
+
+.business-collections-container {
+  width: 82%;
+  max-width: 1320px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  align-items: center;
+  gap: 92px;
+  padding: 120px 0 130px;
+}
+
+.business-collections-copy {
+  text-align: left;
+}
+
+.business-collections-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 42px;
+  padding: 0 22px;
+  border: 2px solid #8a68ff;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #343238;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.business-collections-pill img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.business-collections-copy h2 {
+  margin-top: 26px;
+  color: #343238;
+  font-size: 46px;
+  line-height: 1.14;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.business-collections-copy > p {
+  max-width: 720px;
+  margin-top: 20px;
+  color: #343238;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.business-collections-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+  list-style: none;
+}
+
+.business-collections-list li {
+  position: relative;
+  padding-left: 34px;
+  color: #605b65;
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.business-collections-list li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #7757f4;
+}
+
+.business-collections-list li::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  width: 6px;
+  height: 10px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: rotate(45deg);
+}
+
+.business-collections-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+  color: #241052;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.business-collections-link span {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #c8b9ff;
+}
+
+.business-collections-link span::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #6f4de7;
+  border-right: 2px solid #6f4de7;
+  transform: rotate(45deg);
+}
+
+.business-collections-link span::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 11px;
+  width: 10px;
+  height: 2px;
+  border-radius: 999px;
+  background: #6f4de7;
+}
+
+.business-collections-media {
+  position: relative;
+  min-height: 500px;
+}
+
+.business-collections-photo {
+  width: 100%;
+  height: 430px;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.business-collections-card {
+  position: absolute;
+  left: 42px;
+  bottom: 0;
+  width: 420px;
+  max-width: 66%;
+  display: block;
+  filter: drop-shadow(0 18px 32px rgba(36, 16, 82, 0.08));
+}
+/* styling the collections section - end */
+
+/* styling the investment section - start */
+.business-investment-section {
+  background: #ffffff;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #343238;
+}
+
+.business-investment-container {
+  width: 82%;
+  max-width: 1320px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 84px;
+  padding: 120px 0 130px;
+}
+
+.business-investment-media {
+  position: relative;
+  min-height: 500px;
+}
+
+.business-investment-photo {
+  width: 100%;
+  height: 430px;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.business-investment-card {
+  position: absolute;
+  left: 42px;
+  bottom: 0;
+  width: 420px;
+  max-width: 66%;
+  display: block;
+  filter: drop-shadow(0 18px 32px rgba(36, 16, 82, 0.08));
+}
+
+.business-investment-copy {
+  text-align: left;
+}
+
+.business-investment-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 42px;
+  padding: 0 22px;
+  border: 2px solid #8a68ff;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #343238;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.business-investment-pill img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.business-investment-copy h2 {
+  max-width: 680px;
+  margin-top: 26px;
+  color: #343238;
+  font-size: 46px;
+  line-height: 1.14;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.business-investment-copy > p {
+  max-width: 710px;
+  margin-top: 20px;
+  color: #343238;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.business-investment-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+  list-style: none;
+}
+
+.business-investment-list li {
+  position: relative;
+  padding-left: 34px;
+  color: #605b65;
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.business-investment-list li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #7757f4;
+}
+
+.business-investment-list li::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  width: 6px;
+  height: 10px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: rotate(45deg);
+}
+
+.business-investment-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+  color: #241052;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.business-investment-link span {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #c8b9ff;
+}
+
+.business-investment-link span::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #6f4de7;
+  border-right: 2px solid #6f4de7;
+  transform: rotate(45deg);
+}
+
+.business-investment-link span::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 11px;
+  width: 10px;
+  height: 2px;
+  border-radius: 999px;
+  background: #6f4de7;
+}
+/* styling the investment section - end */
+
+/* styling the want to find out more section - start */
+.business-more-section {
+  background: #ffffff;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  padding: 90px 0 110px;
+}
+
+.business-more-container {
+  width: 82%;
+  max-width: 1320px;
+  min-height: 360px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 58px 32px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 12% 80%, rgba(129, 73, 255, 0.85), transparent 42%),
+    linear-gradient(112deg, #6b39df 0%, #3d1785 48%, #281261 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.business-more-container h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.business-more-container p {
+  max-width: 820px;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+.business-more-button {
+  min-width: 280px;
+  min-height: 72px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 40px;
+  padding: 0 34px;
+  border-radius: 8px;
+  background: #e80068;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.business-more-button:hover {
+  background: #d60060;
+  transform: translateY(-2px);
+}
+
+.business-more-button span {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+}
+
+.business-more-button span::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 8px;
+  width: 14px;
+  height: 2px;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.business-more-button span::after {
+  content: "";
+  position: absolute;
+  right: 1px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transform: rotate(45deg);
+}
+/* styling the want to find out more section - end */
+
+/* styling the ready for your carbon experience - start */
+.business-ready-section {
+  background: #ffffff;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #343238;
+}
+
+.business-ready-container {
+  width: 82%;
+  max-width: 1320px;
+  margin: auto;
+  padding: 78px 0 120px;
+}
+
+.business-ready-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 80px;
+}
+
+.business-ready-copy {
+  max-width: 600px;
+}
+
+.business-ready-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 42px;
+  padding: 0 22px;
+  border: 2px solid #8a68ff;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #343238;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.business-ready-pill img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.business-ready-copy h2 {
+  margin-top: 8px;
+  color: #343238;
+  font-size: 48px;
+  line-height: 1.14;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.business-ready-copy p {
+  margin-top: 22px;
+  color: #343238;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.business-ready-button {
+  min-height: 62px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 28px;
+  border-radius: 8px;
+  background: #e80068;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.business-ready-button:hover {
+  background: #d60060;
+  transform: translateY(-2px);
+}
+
+.business-ready-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 76px;
+  margin-top: 260px;
+}
+
+.business-ready-card {
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fbf9ff;
+}
+
+.business-ready-card-copy {
+  min-height: 238px;
+  padding: 28px 28px 22px;
+}
+
+.business-ready-number {
+  width: 74px;
+  height: 74px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.business-ready-card.account .business-ready-number {
+  color: #5d2ece;
+  background: #e6dcff;
+  box-shadow: 0 0 0 9px #f0eaff;
+}
+
+.business-ready-card.kyc .business-ready-number {
+  color: #e80068;
+  background: #ffd4ed;
+  box-shadow: 0 0 0 9px #ffe5f4;
+}
+
+.business-ready-card.banking .business-ready-number {
+  color: #0877e8;
+  background: #d5efff;
+  box-shadow: 0 0 0 9px #e9f8ff;
+}
+
+.business-ready-card h3 {
+  margin-top: 34px;
+  color: #343238;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.business-ready-card p {
+  margin-top: 14px;
+  color: #4f4a54;
+  font-size: 20px;
+  line-height: 1.08;
+}
+
+.business-ready-visual {
+  min-height: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:
+    radial-gradient(circle, rgba(113, 81, 230, 0.22) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(113, 81, 230, 0.22) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(113, 81, 230, 0.22) 1px, transparent 1px);
+  background-size: 8px 8px, 56px 56px, 56px 56px;
+}
+
+.business-ready-card.account .business-ready-visual {
+  background-color: #cfc0ff;
+}
+
+.business-ready-card.kyc .business-ready-visual {
+  background-color: #ff9dea;
+}
+
+.business-ready-card.banking .business-ready-visual {
+  background-color: #67dff5;
+}
+
+.business-ready-icon {
+  width: 118px;
+  height: 118px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.business-ready-icon img {
+  width: 76px;
+  height: 76px;
+  display: block;
+}
+/* styling the ready for your carbon experience - end */
+
+/* styling the banking for everyone section - start */
+.business-everyone-section {
+  background: #ffffff;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #343238;
+}
+
+.business-everyone-container {
+  width: 82%;
+  max-width: 1320px;
+  margin: auto;
+  padding: 46px 0 120px;
+}
+
+.business-everyone-heading {
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+}
+
+.business-everyone-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 32px;
+  padding: 0 18px;
+  border: 1.5px solid #8a68ff;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #343238;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.business-everyone-pill img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.business-everyone-heading h2 {
+  margin-top: 34px;
+  color: #343238;
+  font-size: 30px;
+  line-height: 1.12;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.business-everyone-heading p {
+  margin-top: 34px;
+  color: #4f4a54;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.business-everyone-grid {
+  max-width: 1180px;
+  margin: 148px auto 0;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  grid-template-areas:
+    "incorporation small self"
+    "incorporation startup brands";
+  gap: 22px;
+}
+
+.business-everyone-card {
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f5f3fb;
+}
+
+.business-everyone-card img {
+  width: 100%;
+  height: 220px;
+  display: block;
+  object-fit: cover;
+}
+
+.business-everyone-card-body {
+  min-height: 136px;
+  padding: 28px 30px;
+}
+
+.business-everyone-card h3 {
+  color: #26222d;
+  font-size: 23px;
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.business-everyone-card p {
+  margin-top: 14px;
+  color: #3f3948;
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+.business-everyone-card.incorporation {
+  grid-area: incorporation;
+  background: #ffdced;
+}
+
+.business-everyone-card.small {
+  grid-area: small;
+  background: #b8f4ec;
+}
+
+.business-everyone-card.self {
+  grid-area: self;
+  background: #eff0f8;
+}
+
+.business-everyone-card.startup {
+  grid-area: startup;
+  background: #e8f9df;
+}
+
+.business-everyone-card.brands {
+  grid-area: brands;
+  background: #bdbcff;
+}
+
+.business-everyone-card.incorporation img {
+  height: 470px;
+  filter: saturate(0.8) opacity(0.72);
+}
+
+.business-everyone-card.incorporation .business-everyone-card-body {
+  min-height: 246px;
+  padding: 44px 30px 34px;
+}
+
+.business-everyone-card a {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 0 14px;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #26222d;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.business-everyone-card a span {
+  position: relative;
+  width: 14px;
+  height: 14px;
+}
+
+.business-everyone-card a span::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 6px;
+  width: 12px;
+  height: 1.5px;
+  background: currentColor;
+}
+
+.business-everyone-card a span::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
+}
+/* styling the banking for everyone section - end */
+
+/* styling the takes 5 mins section - start */
+.business-five-minutes-section {
+  background: #ffffff;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  padding: 0 0 118px;
+}
+
+.business-five-minutes-card {
+  width: 82%;
+  max-width: 1500px;
+  min-height: 430px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 58px 24px 66px;
+  border-radius: 0 0 36px 36px;
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fbf9ff 20%,
+      #efe5ff 52%,
+      #c9a8ff 100%
+    );
+  text-align: center;
+}
+
+.business-five-minutes-card h2 {
+  max-width: 830px;
+  color: #5d35d5;
+  font-size: 60px;
+  line-height: 0.98;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.business-five-minutes-card p {
+  max-width: 850px;
+  margin-top: 48px;
+  color: #292333;
+  font-size: 34px;
+  line-height: 1.08;
+  font-weight: 400;
+}
+
+.business-five-minutes-button {
+  min-height: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 46px;
+  padding: 0 34px;
+  border-radius: 8px;
+  background: #e80068;
+  box-shadow: 0 10px 18px rgba(73, 47, 111, 0.18);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+  white-space: nowrap;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.business-five-minutes-button:hover {
+  background: #d60060;
+  box-shadow: 0 12px 22px rgba(73, 47, 111, 0.22);
+  transform: translateY(-2px);
+}
+
+.business-five-minutes-button span {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+
+.business-five-minutes-button span::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 8px;
+  width: 16px;
+  height: 2px;
+  background: currentColor;
+}
+
+.business-five-minutes-button span::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+/* styling the takes 5 mins section - end  */
+
+/* styling the business footer - start */
+.business-footer {
+  background: #ffffff;
+  color: #ffffff;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  padding: 0 0 108px;
+}
+
+.business-footer-panel {
+  width: min(82%, 1140px);
+  min-height: 680px;
+  margin: auto;
+  border-radius: 26px;
+  background: #351d78;
+}
+
+.business-footer-panel-inner {
+  width: 74%;
+  height: 100%;
+  min-height: 680px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0 90px;
+}
+
+.business-footer-links {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr 0.95fr 1fr;
+  gap: 78px;
+  align-items: start;
+}
+
+.business-footer-column h2,
+.business-footer-contact h2 {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.business-footer-column a,
+.business-footer-contact a {
+  width: fit-content;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.business-footer-column a {
+  margin-top: 24px;
+}
+
+.business-footer-contact {
+  margin-top: 42px;
+}
+
+.business-footer-contact a {
+  margin-top: 14px;
+  font-weight: 700;
+}
+
+.business-footer-contact a:first-of-type {
+  text-decoration: underline;
+}
+
+.business-footer-downloads {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 72px;
+  margin-left: 22px;
+}
+
+.business-footer-downloads img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+.business-footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 22px;
+  margin-left: 38px;
+}
+
+.business-footer-socials a {
+  min-width: 16px;
+  min-height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.business-footer-socials img {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.business-footer-legal {
+  width: min(70%, 920px);
+  margin: 78px auto 0;
+  color: #5f5968;
+  font-size: 11px;
+  line-height: 1.25;
+}
+
+.business-footer-legal p + p {
+  margin-top: 32px;
+}
+
+.business-footer-flag {
+  width: 12px;
+  height: 8px;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 4px;
+  vertical-align: middle;
+  background:
+    linear-gradient(90deg, #0b8b52 0 33.333%, #ffffff 33.333% 66.666%, #0b8b52 66.666%);
+}
+
+/* styling the business footer - end */
+
+/* media query for the header - start */
+@media (max-width: 1280px) {
+  .business-navbar {
+    width: 94%;
+    gap: 24px;
+  }
+
+  .business-brand img {
+    width: 170px;
+  }
+
+  .business-nav-menu,
+  .business-nav-links {
+    gap: 24px;
+  }
+
+  .business-plan-links {
+    gap: 22px;
+  }
+
+  .business-plan-links a,
+  .business-nav-links a,
+  .business-dropdown-trigger {
+    font-size: 16px;
+  }
+
+  .business-create {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .business-navbar {
+    width: min(92%, 760px);
+    min-height: 88px;
+    justify-content: space-between;
+  }
+
+  .business-menu-button {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  .business-menu-button span {
+    width: 26px;
+    height: 2px;
+    display: block;
+    border-radius: 999px;
+    background: #241052;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+
+  .business-nav-menu {
+    position: absolute;
+    top: 88px;
+    left: 0;
+    right: 0;
+    display: grid;
+    gap: 18px;
+    padding: 18px 6% 26px;
+    background: #ffffff;
+    border-bottom: 1px solid #e7e2ef;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease,
+      visibility 0.2s ease;
+  }
+
+  .business-menu-toggle:checked ~ .business-menu-button span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .business-menu-toggle:checked ~ .business-menu-button span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .business-menu-toggle:checked ~ .business-menu-button span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .business-menu-toggle:checked ~ .business-nav-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .business-plan-links,
+  .business-nav-links,
+  .business-actions {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+  }
+
+  .business-plan-links {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .business-plan-links a,
+  .business-nav-links a,
+  .business-dropdown-trigger {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    border-radius: 8px;
+    background: #f8f5ff;
+  }
+
+  .business-plan-links .active {
+    color: #ffffff;
+    background: #5d2ece;
+  }
+
+  .business-dropdown-menu {
+    position: static;
+    width: 100%;
+    margin-top: 8px;
+    box-shadow: none;
+    border: 1px solid #ece7f6;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+  }
+
+  .business-dropdown:hover .business-dropdown-menu,
+  .business-dropdown:focus-within .business-dropdown-menu {
+    display: grid;
+    transform: none;
+  }
+
+  .business-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-navbar {
+    width: min(92%, 430px);
+  }
+
+  .business-brand img {
+    width: 150px;
+  }
+
+  .business-plan-links,
+  .business-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .business-login,
+  .business-create {
+    width: 100%;
+  }
+}
+/* media query for the header - end */
+
+/* media query for credit led business bank section - start */
+@media (max-width: 1280px) {
+  .business-hero-container {
+    width: 88%;
+  }
+
+  .business-hero-top h1 {
+    font-size: 60px;
+  }
+
+  .business-feature-card {
+    gap: 18px;
+    padding: 22px 24px;
+  }
+
+  .business-feature-card h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .business-hero-container {
+    width: min(88%, 720px);
+    padding: 58px 0 78px;
+  }
+
+  .business-hero-top h1 {
+    font-size: 48px;
+  }
+
+  .business-hero-top p {
+    font-size: 22px;
+  }
+
+  .business-regulation-row {
+    flex-wrap: wrap;
+    gap: 20px 28px;
+  }
+
+  .business-feature-cards {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    margin: 90px auto 0;
+  }
+
+  .business-feature-card {
+    min-height: 104px;
+  }
+
+  .business-hero-bottom h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-hero-container {
+    width: min(90%, 430px);
+    padding: 44px 0 72px;
+  }
+
+  .business-hero-top h1 {
+    font-size: 38px;
+  }
+
+  .business-hero-top p {
+    font-size: 18px;
+  }
+
+  .business-hero-cta {
+    width: 100%;
+    min-height: 56px;
+    padding-inline: 18px;
+    font-size: 15px;
+  }
+
+  .business-regulation-row,
+  .business-trusted-row,
+  .business-app-links {
+    display: grid;
+    justify-items: center;
+  }
+
+  .business-regulation-item {
+    white-space: normal;
+  }
+
+  .business-trusted-row {
+    text-align: center;
+  }
+
+  .business-trusted-row img {
+    width: 160px;
+  }
+
+  .business-app-links img {
+    height: 42px;
+  }
+
+  .business-feature-cards {
+    margin-top: 70px;
+  }
+
+  .business-feature-card {
+    align-items: flex-start;
+    gap: 16px;
+    padding: 22px;
+  }
+
+  .business-feature-icon {
+    width: 62px;
+    height: 62px;
+  }
+
+  .business-feature-icon img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .business-feature-card h3 {
+    font-size: 21px;
+  }
+
+  .business-hero-bottom h2 {
+    font-size: 22px;
+  }
+
+  .business-chat-button {
+    right: 18px;
+    bottom: 18px;
+    width: 58px;
+    height: 58px;
+  }
+}
+/* media query for credit led business bank section - end */
+
+/* media query for the business os section - start */
+@media (max-width: 1280px) {
+  .business-os-container {
+    width: 88%;
+  }
+
+  .business-account-row {
+    gap: 56px;
+  }
+
+  .business-account-copy h3 {
+    font-size: 40px;
+  }
+
+  .business-account-list li,
+  .business-account-link {
+    font-size: 19px;
+  }
+
+  .business-account-photo {
+    height: 390px;
+  }
+}
+
+@media (max-width: 991px) {
+  .business-os-container {
+    width: min(88%, 720px);
+    padding: 62px 0 96px;
+  }
+
+  .business-os-heading h2 {
+    font-size: 36px;
+  }
+
+  .business-os-heading p {
+    font-size: 20px;
+  }
+
+  .business-account-row {
+    grid-template-columns: 1fr;
+    gap: 54px;
+    margin-top: 70px;
+  }
+
+  .business-account-copy {
+    text-align: center;
+  }
+
+  .business-account-copy h3,
+  .business-account-copy > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .business-account-list {
+    max-width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .business-account-media {
+    min-height: 450px;
+  }
+
+  .business-account-card {
+    left: 34px;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-os-container {
+    width: min(90%, 430px);
+    padding: 50px 0 82px;
+  }
+
+  .business-os-pill,
+  .business-account-pill {
+    min-height: 38px;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  .business-os-heading h2 {
+    font-size: 30px;
+  }
+
+  .business-os-heading p {
+    font-size: 17px;
+  }
+
+  .business-account-row {
+    margin-top: 54px;
+  }
+
+  .business-account-copy h3 {
+    font-size: 32px;
+  }
+
+  .business-account-copy > p {
+    font-size: 16px;
+  }
+
+  .business-account-list li,
+  .business-account-link {
+    font-size: 17px;
+  }
+
+  .business-account-media {
+    min-height: 330px;
+  }
+
+  .business-account-photo {
+    height: 260px;
+  }
+
+  .business-account-card {
+    left: 18px;
+    width: 260px;
+    max-width: 78%;
+  }
+}
+/* media query for the business os section - end */
+
+/* media query for business loan section - start */
+@media (max-width: 1280px) {
+  .business-loan-container {
+    width: 88%;
+    gap: 56px;
+  }
+
+  .business-loan-copy h2 {
+    font-size: 40px;
+  }
+
+  .business-loan-list li,
+  .business-loan-link {
+    font-size: 19px;
+  }
+
+  .business-loan-photo {
+    height: 390px;
+  }
+
+  .business-loan-card {
+    width: 360px;
+  }
+}
+
+@media (max-width: 991px) {
+  .business-loan-container {
+    width: min(88%, 720px);
+    grid-template-columns: 1fr;
+    gap: 54px;
+    padding: 82px 0 100px;
+  }
+
+  .business-loan-copy {
+    text-align: center;
+    order: -1;
+  }
+
+  .business-loan-copy h2,
+  .business-loan-copy > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .business-loan-list {
+    max-width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .business-loan-media {
+    min-height: 450px;
+  }
+
+  .business-loan-card {
+    left: 34px;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-loan-container {
+    width: min(90%, 430px);
+    padding: 64px 0 86px;
+  }
+
+  .business-loan-pill {
+    min-height: 38px;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  .business-loan-copy h2 {
+    font-size: 32px;
+  }
+
+  .business-loan-copy > p {
+    font-size: 16px;
+  }
+
+  .business-loan-list li,
+  .business-loan-link {
+    font-size: 17px;
+  }
+
+  .business-loan-media {
+    min-height: 330px;
+  }
+
+  .business-loan-photo {
+    height: 260px;
+  }
+
+  .business-loan-card {
+    left: 18px;
+    width: 270px;
+    max-width: 80%;
+  }
+}
+/* media query for business loan section - end */
+
+/* media query for the collections section - start */
+@media (max-width: 1280px) {
+  .business-collections-container {
+    width: 88%;
+    gap: 56px;
+  }
+
+  .business-collections-copy h2 {
+    font-size: 40px;
+  }
+
+  .business-collections-list li,
+  .business-collections-link {
+    font-size: 19px;
+  }
+
+  .business-collections-photo {
+    height: 390px;
+  }
+
+  .business-collections-card {
+    width: 360px;
+  }
+}
+
+@media (max-width: 991px) {
+  .business-collections-container {
+    width: min(88%, 720px);
+    grid-template-columns: 1fr;
+    gap: 54px;
+    padding: 82px 0 100px;
+  }
+
+  .business-collections-copy {
+    text-align: center;
+  }
+
+  .business-collections-copy h2,
+  .business-collections-copy > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .business-collections-list {
+    max-width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .business-collections-media {
+    min-height: 450px;
+  }
+
+  .business-collections-card {
+    left: 34px;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-collections-container {
+    width: min(90%, 430px);
+    padding: 64px 0 86px;
+  }
+
+  .business-collections-pill {
+    min-height: 38px;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  .business-collections-copy h2 {
+    font-size: 32px;
+  }
+
+  .business-collections-copy > p {
+    font-size: 16px;
+  }
+
+  .business-collections-list li,
+  .business-collections-link {
+    font-size: 17px;
+  }
+
+  .business-collections-media {
+    min-height: 330px;
+  }
+
+  .business-collections-photo {
+    height: 260px;
+  }
+
+  .business-collections-card {
+    left: 18px;
+    width: 270px;
+    max-width: 80%;
+  }
+}
+/* media query for the collections section - end */
+
+/* media query for the investment section - start */
+@media (max-width: 1280px) {
+  .business-investment-container {
+    width: 88%;
+    gap: 56px;
+  }
+
+  .business-investment-copy h2 {
+    font-size: 40px;
+  }
+
+  .business-investment-list li,
+  .business-investment-link {
+    font-size: 19px;
+  }
+
+  .business-investment-photo {
+    height: 390px;
+  }
+
+  .business-investment-card {
+    width: 360px;
+  }
+}
+
+@media (max-width: 991px) {
+  .business-investment-container {
+    width: min(88%, 720px);
+    grid-template-columns: 1fr;
+    gap: 54px;
+    padding: 82px 0 100px;
+  }
+
+  .business-investment-copy {
+    text-align: center;
+    order: -1;
+  }
+
+  .business-investment-copy h2,
+  .business-investment-copy > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .business-investment-list {
+    max-width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .business-investment-media {
+    min-height: 450px;
+  }
+
+  .business-investment-card {
+    left: 34px;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-investment-container {
+    width: min(90%, 430px);
+    padding: 64px 0 86px;
+  }
+
+  .business-investment-pill {
+    min-height: 38px;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  .business-investment-copy h2 {
+    font-size: 32px;
+  }
+
+  .business-investment-copy > p {
+    font-size: 16px;
+  }
+
+  .business-investment-list li,
+  .business-investment-link {
+    font-size: 17px;
+  }
+
+  .business-investment-media {
+    min-height: 330px;
+  }
+
+  .business-investment-photo {
+    height: 260px;
+  }
+
+  .business-investment-card {
+    left: 18px;
+    width: 270px;
+    max-width: 80%;
+  }
+}
+/* media query for the investment section - end */
+
+/* media query for the want to find out more section - start */
+@media (max-width: 1280px) {
+  .business-more-container {
+    width: 88%;
+  }
+}
+
+@media (max-width: 991px) {
+  .business-more-section {
+    padding: 76px 0 96px;
+  }
+
+  .business-more-container {
+    width: min(88%, 720px);
+    min-height: 330px;
+    padding: 48px 28px;
+  }
+
+  .business-more-container h2 {
+    font-size: 34px;
+  }
+
+  .business-more-container p {
+    font-size: 19px;
+  }
+
+  .business-more-button {
+    min-height: 64px;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-more-section {
+    padding: 60px 0 82px;
+  }
+
+  .business-more-container {
+    width: min(90%, 430px);
+    min-height: 300px;
+    padding: 42px 22px;
+    border-radius: 20px;
+  }
+
+  .business-more-container h2 {
+    font-size: 28px;
+  }
+
+  .business-more-container p {
+    font-size: 16px;
+  }
+
+  .business-more-button {
+    width: 100%;
+    min-width: 0;
+    min-height: 58px;
+    gap: 16px;
+    padding: 0 20px;
+    font-size: 17px;
+  }
+}
+/* media query for the want to find out more section - end  */
+
+/* media query for ready for your carbon experience - start */
+@media (max-width: 1280px) {
+  .business-ready-container {
+    width: 88%;
+  }
+
+  .business-ready-cards {
+    gap: 34px;
+    margin-top: 180px;
+  }
+
+  .business-ready-card p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .business-ready-container {
+    width: min(88%, 720px);
+    padding: 70px 0 100px;
+  }
+
+  .business-ready-top {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    text-align: center;
+  }
+
+  .business-ready-copy {
+    max-width: none;
+  }
+
+  .business-ready-copy h2 {
+    font-size: 40px;
+  }
+
+  .business-ready-button {
+    justify-self: center;
+  }
+
+  .business-ready-cards {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 80px auto 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-ready-container {
+    width: min(90%, 430px);
+    padding: 58px 0 86px;
+  }
+
+  .business-ready-pill {
+    min-height: 38px;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  .business-ready-copy h2 {
+    font-size: 32px;
+  }
+
+  .business-ready-copy p {
+    font-size: 16px;
+  }
+
+  .business-ready-button {
+    width: 100%;
+    min-height: 56px;
+    padding-inline: 18px;
+    font-size: 15px;
+  }
+
+  .business-ready-cards {
+    gap: 24px;
+    margin-top: 58px;
+  }
+
+  .business-ready-card-copy {
+    min-height: 220px;
+    padding: 24px 22px 20px;
+  }
+
+  .business-ready-number {
+    width: 62px;
+    height: 62px;
+    font-size: 26px;
+  }
+
+  .business-ready-card h3 {
+    margin-top: 28px;
+    font-size: 21px;
+  }
+
+  .business-ready-card p {
+    font-size: 17px;
+    line-height: 1.18;
+  }
+
+  .business-ready-visual {
+    min-height: 230px;
+  }
+
+  .business-ready-icon {
+    width: 104px;
+    height: 104px;
+  }
+
+  .business-ready-icon img {
+    width: 68px;
+    height: 68px;
+  }
+}
+/* media query for ready for your carbon experience - end */
+
+/* media query for banking for everyone section - start */
+@media (max-width: 1280px) {
+  .business-everyone-container {
+    width: 88%;
+  }
+
+  .business-everyone-grid {
+    margin-top: 110px;
+    gap: 18px;
+  }
+
+  .business-everyone-card-body {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .business-everyone-container {
+    width: min(88%, 720px);
+    padding: 42px 0 100px;
+  }
+
+  .business-everyone-heading h2 {
+    font-size: 28px;
+  }
+
+  .business-everyone-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "incorporation small"
+      "incorporation self"
+      "startup brands";
+    margin-top: 80px;
+  }
+
+  .business-everyone-card.incorporation img {
+    height: 430px;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-everyone-container {
+    width: min(90%, 430px);
+    padding: 34px 0 86px;
+  }
+
+  .business-everyone-heading h2 {
+    margin-top: 24px;
+    font-size: 24px;
+  }
+
+  .business-everyone-heading p {
+    margin-top: 22px;
+    font-size: 15px;
+  }
+
+  .business-everyone-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "incorporation"
+      "small"
+      "self"
+      "startup"
+      "brands";
+    margin-top: 54px;
+  }
+
+  .business-everyone-card img,
+  .business-everyone-card.incorporation img {
+    height: 230px;
+  }
+
+  .business-everyone-card-body,
+  .business-everyone-card.incorporation .business-everyone-card-body {
+    min-height: auto;
+    padding: 24px 22px;
+  }
+
+  .business-everyone-card h3 {
+    font-size: 21px;
+  }
+
+  .business-everyone-card p {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+}
+/* media query for banking for everyone section - end */
+
+/* media query for the 5 mins section - start */
+@media (max-width: 1280px) {
+  .business-five-minutes-card {
+    width: 88%;
+  }
+
+  .business-five-minutes-card h2 {
+    font-size: 52px;
+  }
+
+  .business-five-minutes-card p {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 991px) {
+  .business-five-minutes-section {
+    padding-bottom: 96px;
+  }
+
+  .business-five-minutes-card {
+    width: min(88%, 720px);
+    min-height: 380px;
+    padding: 52px 28px 58px;
+  }
+
+  .business-five-minutes-card h2 {
+    font-size: 44px;
+  }
+
+  .business-five-minutes-card p {
+    max-width: 620px;
+    margin-top: 34px;
+    font-size: 24px;
+    line-height: 1.18;
+  }
+
+  .business-five-minutes-button {
+    min-height: 62px;
+    margin-top: 38px;
+    padding: 0 28px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-five-minutes-section {
+    padding-bottom: 78px;
+  }
+
+  .business-five-minutes-card {
+    width: min(90%, 430px);
+    min-height: 340px;
+    padding: 46px 20px 50px;
+    border-radius: 0 0 28px 28px;
+  }
+
+  .business-five-minutes-card h2 {
+    font-size: 34px;
+    line-height: 1.05;
+  }
+
+  .business-five-minutes-card p {
+    margin-top: 28px;
+    font-size: 18px;
+    line-height: 1.28;
+  }
+
+  .business-five-minutes-button {
+    width: 100%;
+    min-height: 56px;
+    gap: 14px;
+    margin-top: 30px;
+    padding: 0 18px;
+    font-size: 15px;
+  }
+}
+/* media query for the 5 mins section - end */
+
+/* media query for the business footer - start */
+@media (max-width: 1280px) {
+  .business-footer-panel {
+    width: 88%;
+  }
+
+  .business-footer-panel-inner {
+    width: 78%;
+  }
+
+  .business-footer-links {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 991px) {
+  .business-footer {
+    padding-bottom: 86px;
+  }
+
+  .business-footer-panel {
+    width: min(88%, 720px);
+    min-height: auto;
+  }
+
+  .business-footer-panel-inner {
+    width: 82%;
+    min-height: auto;
+    padding: 54px 0 72px;
+  }
+
+  .business-footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px 56px;
+  }
+
+  .business-footer-contact {
+    margin-top: 54px;
+  }
+
+  .business-footer-downloads {
+    margin-top: 54px;
+    margin-left: 0;
+  }
+
+  .business-footer-socials {
+    margin-left: 0;
+  }
+
+  .business-footer-legal {
+    width: min(78%, 640px);
+    margin-top: 58px;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-footer {
+    padding-bottom: 70px;
+  }
+
+  .business-footer-panel {
+    width: min(90%, 430px);
+    border-radius: 22px;
+  }
+
+  .business-footer-panel-inner {
+    width: 82%;
+    padding: 44px 0 58px;
+  }
+
+  .business-footer-links {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .business-footer-column a {
+    margin-top: 16px;
+  }
+
+  .business-footer-contact {
+    margin-top: 38px;
+  }
+
+  .business-footer-downloads {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 42px;
+  }
+
+  .business-footer-downloads img {
+    width: 116px;
+  }
+
+  .business-footer-socials {
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .business-footer-legal {
+    width: min(84%, 430px);
+    margin-top: 42px;
+    font-size: 10px;
+    line-height: 1.45;
+  }
+
+  .business-footer-legal p + p {
+    margin-top: 24px;
+  }
+}
+/* media query for the business footer - end */
