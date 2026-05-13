@@ -10,6 +10,7 @@
     <!-- navbar styling - start -->
     <header>
       <nav>
+        <input type="checkbox" id="faq-menu-toggle" class="faq-menu-toggle" />
         <ul class="nav-links">
           <div class="image-box">
             <a href="#"
@@ -24,9 +25,21 @@
               <li><a href="#">Personal</a></li>
               <li><a href="#">Business</a></li>
             </div>
+
+            <label
+              class="faq-menu-button"
+              for="faq-menu-toggle"
+              aria-label="Toggle navigation"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
           </div>
 
           <div class="features-box links list">
+            <li class="mobile-nav-option"><a href="#">Personal</a></li>
+            <li class="mobile-nav-option"><a href="#">Business</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Company</a></li>
             <li><a href="#">Loan Calculator</a></li>
@@ -37,10 +50,6 @@
 
             <div class="signup-box">
               <button class="signup-btn">Sign Up</button>
-            </div>
-
-            <div>
-              <i class="fa-solid fa-bars menu"></i>
             </div>
           </div>
         </ul>
